@@ -7,14 +7,12 @@ import React from "react";
 const Logo = () => {
   const router = useRouter();
   return (
-    <Image
+    <div
       onClick={() => router.push("/")}
-      alt="Logo"
-      className="hidden md:block cursor-pointer"
-      height="100"
-      width="100"
-      src="/images/logo.png"
-    />
+      className="md:text-2xl font-bold cursor-pointer text-teal-700"
+    >
+      WaterBnb
+    </div>
   );
 };
 
